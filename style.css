@@ -123,3 +123,38 @@ header {
   background: #fff;
   cursor: pointer;
 }
+.section-one {
+  width: 100%;
+  background: #fafafa;
+}
+.section-one-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section-one .baslik h2 {
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-top: 100px;
+}
+.section-one h2 {
+  color: hsl(208, 49%, 24%);
+  font-size: 30px;
+}
+.text-left p {
+  color: hsl(207, 13%, 34%);
+}
+.section-one-left {
+  width: 30%;
+}
+
+.section-one-right {
+  width: 60%;
+}
+
+.section-one-right img {
+    width: 100%;
+}
