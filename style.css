@@ -17,7 +17,7 @@ button {
   font-size: 20px;
 }
 p {
-  font-size: 23px;
+  font-size: 21px;
 }
 header {
 }
@@ -130,15 +130,19 @@ header {
 .section-one-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 .section-one .baslik h2 {
-  text-align: center;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  padding-top: 100px;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  text-align: center;
+  font-size: 40px;
 }
 .section-one h2 {
   color: hsl(208, 49%, 24%);
@@ -148,13 +152,15 @@ header {
   color: hsl(207, 13%, 34%);
 }
 .section-one-left {
-  width: 30%;
+  width: 40%;
+  margin-bottom: 130px;
 }
 
 .section-one-right {
-  width: 60%;
+  width: 65%;
+  margin-right: -550px;
 }
 
 .section-one-right img {
-    width: 100%;
+  width: 100%;
 }
