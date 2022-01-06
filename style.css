@@ -24,8 +24,6 @@ p {
 h2 {
   font-size: 40px;
 }
-header {
-}
 .navbar {
   width: 100%;
   background: hsl(356, 100%, 66%);
@@ -130,7 +128,6 @@ header {
 }
 .section-one {
   width: 100%;
-  background: #fafafa;
 }
 .section-one-container {
   display: flex;
@@ -193,6 +190,9 @@ header {
   color: hsl(240, 2%, 79%);
   width: 65%;
 }
+.section-three {
+  padding-bottom: 120px;
+}
 .section-three-container {
   display: flex;
   flex-direction: row;
@@ -216,6 +216,41 @@ header {
   color: hsl(207, 13%, 34%);
 }
 .section-three-right img {
+}
+footer {
+  background: hsl(240, 10%, 16%);
+  border-top-right-radius: 150px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
   width: 100%;
-  height: 100%;
+}
+.footer-container a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-size: 18px;
+  line-height: 40px;
+}
+.footer-container a:hover {
+  text-decoration: underline;
+}
+.footer-container ul {
+  list-style-type: none;
+}
+.footer-container h5 {
+  font-size: 19px;
+  margin-block-start: 0em;
+}
+.footer-container .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin-right: 200px;
 }
