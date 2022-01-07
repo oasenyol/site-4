@@ -507,7 +507,7 @@ footer {
   .footer-container a {
     text-decoration: none;
     color: hsl(240, 2%, 79%);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 40px;
   }
   .footer-container ul {
