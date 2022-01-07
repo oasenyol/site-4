@@ -13,31 +13,23 @@
 
 <body>
   <header>
-    <div class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-left">
-          <div class="navbar-logo">
-            <a href=""><img src="images/logo.svg" alt=""></a>
-          </div>
-          <div class="navbar-links">
-            <ul>
-              <li>
-                <a href="#">Product <img src="images/icon-arrow-light.svg" alt=""></a>
-              </li>
-              <li>
-                <a href="#">Company <img src="images/icon-arrow-light.svg" alt=""></a>
-              </li>
-              <li>
-                <a href="#">Connect <img src="images/icon-arrow-light.svg" alt=""></a>
-              </li>
-            </ul>
-          </div>
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <a href="https://oasenyolsite-4.netlify.app"><img src="images/logo.svg" alt=""></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <div class="navbar-entry">
-          <a href="">Login</a>
-          <button>Sign Up</button>
-        </div>
-      </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="#">Product<img src="images/icon-arrow-light.svg" alt=""></a></li>
+          <li class="nav-item"><a href="#">Company<img src="images/icon-arrow-light.svg" alt=""></a></li>
+          <li class="nav-item"><a href="#">Connect<img src="images/icon-arrow-light.svg" alt=""></a></li>
+          <br>
+          <li class="nav-item"><a href="#">Login</a></li>
+          <li class="nav-item"><button>Sign Up</button></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <div class="intro">
@@ -107,67 +99,68 @@
       </div>
     </div>
   </div>
-
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
         <img src="images/logo.svg" alt="">
       </div>
       <div class="links">
-        <div>
-          <ul>
-            <h5>Product</h5>
-            <a href="#">
-              <li>Overview </li>
-            </a>
-            <a href="#">
-              <li>Pricing </li>
-            </a>
-            <a href="#">
-              <li>Marketplace </li>
-            </a>
-            <a href="#">
-              <li>Features </li>
-            </a>
-            <a href="#">
-              <li>Integrations </li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <h5>Company</h5>
-            <a href="#">
-              <li>About </li>
-            </a>
-            <a href="#">
-              <li>Team </li>
-            </a>
-            <a href="#">
-              <li>Blog </li>
-            </a>
-            <a href="#">
-              <li>Careers</li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <h5>Connect</h5>
-            <a href="#">
-              <li>Contact </li>
-            </a>
-            <a href="#">
-              <li>Newsletter </li>
-            </a>
-            <a href="#">
-              <li>LinkedIn</li>
-            </a>
-          </ul>
-        </div>
+        <ul>
+          <h5>Product</h5>
+          <a href="#">
+            <li>Overview </li>
+          </a>
+          <a href="#">
+            <li>Pricing </li>
+          </a>
+          <a href="#">
+            <li>Marketplace </li>
+          </a>
+          <a href="#">
+            <li>Features </li>
+          </a>
+          <a href="#">
+            <li>Integrations </li>
+          </a>
+        </ul>
+        <ul>
+          <h5>Company</h5>
+          <a href="#">
+            <li>About </li>
+          </a>
+          <a href="#">
+            <li>Team </li>
+          </a>
+          <a href="#">
+            <li>Blog </li>
+          </a>
+          <a href="#">
+            <li>Careers</li>
+          </a>
+        </ul>
+        <ul>
+          <h5>Connect</h5>
+          <a href="#">
+            <li>Contact </li>
+          </a>
+          <a href="#">
+            <li>Newsletter </li>
+          </a>
+          <a href="#">
+            <li>LinkedIn</li>
+          </a>
+        </ul>
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $('.menu-toggle').click(function () {
+      $(".nav").toggleClass("mobile-nav");
+      $(this).toggleClass("is-active");
+    });
+  </script>
 </body>
 
 </html>
